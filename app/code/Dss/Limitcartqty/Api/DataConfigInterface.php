@@ -23,28 +23,28 @@ interface DataConfigInterface
     /**
      * MinValue
      *
-     * @return mixed
+     * @return float|mixed|null
      */
-    public function getMinValue();
+    public function getMinValue(): float|null;
 
     /**
      * MaxValue
      *
-     * @return mixed
+     * @return float|mixed|null
      */
-    public function getMaxValue();
+    public function getMaxValue(): float|null;
 
     /**
      * CustomerId
      *
-     * @return mixed
+     * @return int|mixed
      */
-    public function getCustomerId();
+    public function getCustomerId(): mixed;
 
     /**
      * Store Id
      *
-     * @return mixed
+     * @return int|mixed
      */
-    public function getStoreId();
+    public function getStoreId(): mixed;
 }

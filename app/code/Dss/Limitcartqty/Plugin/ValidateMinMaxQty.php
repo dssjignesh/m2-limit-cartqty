@@ -78,9 +78,9 @@ class ValidateMinMaxQty
      */
     protected function processData($data)
     {
-        $minQtyData = $data['Dss_min_total_qty']['value'];
+        $minQtyData = $data['dss_min_total_qty']['value'];
         unset($minQtyData['__empty']);
-        $maxQtyData = $data['Dss_max_total_qty']['value'];
+        $maxQtyData = $data['dss_max_total_qty']['value'];
         unset($maxQtyData['__empty']);
         $result = [];
         $result = $this->getQtyByCustomerGroup($minQtyData, $result, 'min');

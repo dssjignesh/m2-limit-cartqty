@@ -26,13 +26,13 @@
             <group id="item_options" translate="label" type="text" sortOrder="50" showInDefault="1"
                 showInWebsite="1" showInStore="1">
                 <label>Product Stock Options</label>
-                <field id="Dss_min_total_qty" translate="label" sortOrder="20" showInDefault="1"
+                <field id="dss_min_total_qty" translate="label" sortOrder="20" showInDefault="1"
                     showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Minimum Quantity Allowed for Entire Cart</label>
                     <frontend_model>Dss\Limitcartqty\Block\Adminhtml\Form\Field\Mintotalqty</frontend_model>
                     <backend_model>Dss\Limitcartqty\Model\System\Config\Backend\ConfigModel</backend_model>
                 </field>
-                <field id="Dss_min_total_qty_message" translate="label" type="text" sortOrder="25" showInDefault="1"
+                <field id="dss_min_total_qty_message" translate="label" type="text" sortOrder="25" showInDefault="1"
                     showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Message Alert For Minimum Value</label>
                     <validate>validate-length maximum-length-100</validate>
@@ -41,13 +41,13 @@
                         "The fewest you can purchase is -conf-, you already have -cart-!". Limit 100 characters.
                     </comment>
                 </field>
-                <field id="Dss_max_total_qty" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1"
+                <field id="dss_max_total_qty" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1"
                     showInStore="1" canRestore="1">
                     <label>Maximum Quantity Allowed for Entire Cart</label>
                     <frontend_model>Dss\Limitcartqty\Block\Adminhtml\Form\Field\Maxtotalqty</frontend_model>
                     <backend_model>Dss\Limitcartqty\Model\System\Config\Backend\ConfigModel</backend_model>
                 </field>
-                <field id="Dss_max_total_qty_message" translate="label" type="text" sortOrder="35" showInDefault="1"
+                <field id="dss_max_total_qty_message" translate="label" type="text" sortOrder="35" showInDefault="1"
                     showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Message Alert For Maximum Value</label>
                     <validate>validate-length maximum-length-100</validate>
