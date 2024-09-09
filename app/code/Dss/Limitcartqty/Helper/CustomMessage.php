@@ -69,7 +69,7 @@ class CustomMessage
     public function getMinMessage($conf, $cart)
     {
         $value = $this->scopeConfig->getValue(
-            'Dss_Commerce/item_options/dss_min_total_qty_message',
+            'dss_commerce/item_options/dss_min_total_qty_message',
             ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );
@@ -91,7 +91,7 @@ class CustomMessage
     public function getMaxMessage($conf, $cart)
     {
         $value = $this->scopeConfig->getValue(
-            'Dss_Commerce/item_options/dss_max_total_qty_message',
+            'dss_commerce/item_options/dss_max_total_qty_message',
             ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );

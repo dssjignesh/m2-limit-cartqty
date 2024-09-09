@@ -41,7 +41,7 @@ class ValidateMinMaxQty
     public function beforeSave(\Magento\Config\Model\Config $subject)
     {
         $customerGroups = $this->getCustomerGroups();
-        if ($subject->getSection() == 'Dss_Commerce') {
+        if ($subject->getSection() == 'dss_commerce') {
             $groups = $subject->getGroups();
             $data = $this->processData($groups['item_options']['fields']);
             foreach ($data as $groupId => $qty) {
