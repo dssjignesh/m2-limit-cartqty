@@ -185,7 +185,7 @@ class ConfigValue
     public function getMinConfigValue($_customerGroupId): float|null
     {
         $value = $this->scopeConfig->getValue(
-            'Dss_Commerce/item_options/dss_min_total_qty',
+            'dss_commerce/item_options/dss_min_total_qty',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );
@@ -215,7 +215,7 @@ class ConfigValue
     public function getMaxConfigValue($_customerGroupId): float|null
     {
         $value = $this->scopeConfig->getValue(
-            'Dss_Commerce/item_options/dss_max_total_qty',
+            'dss_commerce/item_options/dss_max_total_qty',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );
@@ -244,7 +244,7 @@ class ConfigValue
     public function isModuleEnable(): mixed
     {
         return $this->scopeConfig->getValue(
-            'Dss_Commerce/Limitcartqty/Enable',
+            'dss_commerce/Limitcartqty/Enable',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
             $this->getStoreId()
         );
